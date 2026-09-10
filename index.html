@@ -12,24 +12,26 @@
 
 <style>
   :root {
-    --blue:#3E6AE1; --white:#FFFFFF; --carbon:#171A20; --graphite:#393C41;
-    --pewter:#5C5E62; --silver-fog:#8E8E8E; --pale-silver:#D0D1D2; --light-ash:#F4F4F4;
+    --blue:#0052FF; --white:#FFFFFF; --carbon:#0A0B0D; --graphite:#5B616E;
+    --pewter:#8A919E; --silver-fog:#C3C7CF; --pale-silver:#E3E6EA; --light-ash:#F7F8FA;
   }
   * { box-sizing:border-box; }
-  body { margin:0; padding:20px 16px 40px; color:var(--graphite); background:var(--white);
+  body { margin:0; padding:20px 16px 40px; color:var(--graphite); background:var(--light-ash);
          font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,
                      'Apple SD Gothic Neo','Malgun Gothic',sans-serif; }
   .wrap { max-width:480px; margin:0 auto; }
-  h1 { font-size:22px; margin:6px 0 4px; font-weight:500; color:var(--carbon); }
+  h1 { font-size:22px; margin:6px 0 4px; font-weight:600; color:var(--carbon); }
   .sub { font-size:13px; color:var(--pewter); margin-bottom:18px; line-height:1.6; }
   .disclaimer { display:flex; align-items:flex-start; gap:8px; margin:4px 0 18px;
-    padding:12px 0; background:var(--white);
+    padding:12px 14px; border-radius:12px; background:var(--white); border:1px solid var(--pale-silver);
     color:var(--carbon); font-size:12.5px; font-weight:500; line-height:1.5; }
   .card { display:block; text-decoration:none; color:inherit;
-          border-radius:0; padding:18px 0; margin-bottom:24px;
-          background:var(--white); transition:background-color .33s; }
-  .card:active { background:var(--light-ash); }
-  .card h2 { font-size:16px; margin:0 0 4px; font-weight:500; color:var(--carbon);
+          border-radius:12px; padding:18px 20px 16px; margin-bottom:14px;
+          background:var(--white); border:1px solid var(--pale-silver);
+          box-shadow:0 1px 2px rgba(10,11,13,0.04);
+          transition:background-color .15s ease, box-shadow .15s ease; }
+  .card:active { background:var(--light-ash); box-shadow:0 2px 8px rgba(10,11,13,0.08); }
+  .card h2 { font-size:16px; margin:0 0 4px; font-weight:600; color:var(--carbon);
              display:flex; align-items:center; gap:6px; }
   .card p { font-size:12.5px; color:var(--pewter); margin:0 0 8px; line-height:1.5; }
   .card .meta { font-size:11.5px; color:var(--silver-fog); }
